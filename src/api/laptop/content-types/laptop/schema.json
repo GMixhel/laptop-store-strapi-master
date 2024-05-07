@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "laptops",
+  "info": {
+    "singularName": "laptop",
+    "pluralName": "laptops",
+    "displayName": "Laptops",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "cpu": {
+      "type": "string"
+    },
+    "display": {
+      "type": "string"
+    },
+    "ram": {
+      "type": "string"
+    },
+    "gpu": {
+      "type": "string"
+    },
+    "precio": {
+      "type": "integer"
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "titulo",
+      "required": true
+    },
+    "categoria": {
+      "type": "string"
+    },
+    "procesador": {
+      "type": "string",
+      "required": false
+    },
+    "marca": {
+      "type": "string"
+    },
+    "images_2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
